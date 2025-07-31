@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\apifront;
+use App\Http\Controllers\GestorController;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,3 +29,7 @@ Route::post('/editar/{id}',[apifront::class, 'editar']);
 Route::post('/crear',[apifront::class, 'crear']);
 Route::delete('/borrar/{id}',[apifront::class, 'eliminar']);
 
+
+Route::post('/crear/registro',[GestorController::class, 'crear']);
+Route::get('/registros',[GestorController::class, 'registros']);
+Route::delete('/borrar/registro/{id}',[GestorController::class, 'eliminar']);

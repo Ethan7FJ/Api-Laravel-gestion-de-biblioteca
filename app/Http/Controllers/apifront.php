@@ -6,7 +6,6 @@ use App\Models\diponibilidad;
 use App\Models\genero;
 use App\Models\libro;
 use Illuminate\Http\Request;
-use function PHPUnit\Framework\returnArgument;
 
 class apifront extends Controller
 {

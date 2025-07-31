@@ -18,4 +18,9 @@ class libro extends Model
     public function disponible (){
         return $this->belongsTo( diponibilidad::class);
     }
+
+    public function registro()
+    {
+        return $this->HasMany( registros::class);
+    }
 }
